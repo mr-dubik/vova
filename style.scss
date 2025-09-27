@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    &__links {
+
+    &__nav{
         display: flex;
-        color: aqua;
-        &_text {
-            padding-right: 20px;
+
+        &_link {
+            padding-right: 40px;
         }
     }
 }
