@@ -8,4 +8,16 @@
 }
 .header__nav_link {
   padding-right: 40px;
+}
+
+.info {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.questions {
+  padding-bottom: 500px;
+}
+.questions__block {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
