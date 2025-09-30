@@ -1,16 +1,18 @@
-document
-  .getElementById("questionsLink")
-  .addEventListener("click", function (event) {
-    // Предотвращаем стандартное действие ссылки (переход и изменение URL)
-    event.preventDefault();
+const element = document.getElementById("questionsLink");
+const desiredOffset = 100;
 
-    // Находим целевой элемент
-    const targetElement = document.getElementById("questions");
+document;
+element.addEventListener("click", function (event) {
+  // Предотвращаем стандартное действие ссылки (переход и изменение URL)
+  event.preventDefault();
 
-    // Прокручиваем к целевому элементу
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: "smooth", // Для плавной прокрутки
-      });
-    }
-  });
+  // Находим целевой элемент
+  const targetElement = document.getElementById("questions");
+
+  // Прокручиваем к целевому элементу
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth", // Для плавной прокрутки
+    });
+  }
+});
