@@ -21,16 +21,21 @@ h1 {
 }
 
 .card {
-  display: block;
+  display: flex;              /* используем flexbox */
+  flex-direction: column;     /* вертикальное расположение */
+  align-items: center;        /* горизонтальное выравнивание */
+  justify-content: center;    /* вертикальное выравнивание */
+  text-align: center;         /* текст по центру */
   padding: 20px;
-  background: rgba(0,0,0,0.5); /* полупрозрачный фон */
+  background: rgba(0,0,0,0.5);
   border-radius: 12px;
   text-decoration: none;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  backdrop-filter: blur(6px); /* эффект стекла */
+  backdrop-filter: blur(6px);
 }
+
 
 .card:hover {
   transform: translateY(-5px);
