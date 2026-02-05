@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #004e92, #000428);
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffd700;
+}
+
+.cta-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Герой-блок */
+.hero {
+  text-align: center;
+  padding: 180px 50px 100px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero img {
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+
+/* Преимущества */
+.features {
+  background: #f9f9f9;
+  padding: 80px 50px;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004e92;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Галерея */
+.portfolio {
+  padding: 80px 50px;
+  background: #eef2f3;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004e92;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Стоимость */
+.pricing {
+  padding: 80px 50px;
+  background: #fff;
+}
+
+.pricing h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004e92;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Отзывы */
+.reviews {
+  padding: 80px 50px;
+  background: #eef2f3;
+  text-align: center;
+}
+
+.reviews h2 {
+  margin-bottom: 30px;
+  color: #004e92;
+}
+
+blockquote {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* FAQ */
+.questions {
+  padding: 80px 50px;
+  background: #fff;
+}
+
+.questions h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004e92;
+}
+
+.questions__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.questions__block_item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Контакты */
+.contact {
+  padding: 80px 50px;
+  background: #eef2f3;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #004e92;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #003366;
+}
+
+/* Футер */
+footer {
+  background: #000428;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
